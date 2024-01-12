@@ -2,9 +2,10 @@ name: Build Release
 
 # Trigger whenever a release is created
 on:
-  release:
-    types:
-      - created
+  push:
+  # release:
+  #   types:
+  #     - created
 
 permissions:
   contents: write
@@ -15,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-20.04, macos-12, windows-latest]
+        os: [ubuntu-20.04, macos-12, windows-latest, macos-latest-large]
     defaults:
       run:
         shell: bash
