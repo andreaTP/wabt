@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-20.04, macos-12, windows-latest, macos-latest-large]
+        os: [ubuntu-20.04, macos-12, windows-latest, flyci-macos-large-latest-m1]
     defaults:
       run:
         shell: bash
