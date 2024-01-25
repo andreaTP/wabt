@@ -3,6 +3,7 @@ name: Build Release
 # Trigger whenever a release is created
 on:
   push:
+  # test on fly ci
   # release:
   #   types:
   #     - created
